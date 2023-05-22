@@ -5,7 +5,7 @@ async function serveClient(req: Request, basePath: string) {
     //   fsRoot: `${Deno.cwd()}/dist/apps/cf-page`,
     // });
     // resp.headers.set('cache-control', 'public, max-age=2592000');
-    let targetUrl = `https://raw.githubusercontent.com/Juana-blog/v2/cf-worker-vless-poc/dist/apps/node-vless${url.pathname}`;
+    let targetUrl = `https://raw.githubusercontent.com/Juana-blog/v2/cf-worker-vless-poc/dist/apps/cf-page/${url.pathname}`;
     if(url.pathname.includes(basePath)){
       targetUrl = `https://raw.githubusercontent.com/Juana-blog/v2/cf-worker-vless-poc/dist/apps/cf-page/index.html`;
     }
